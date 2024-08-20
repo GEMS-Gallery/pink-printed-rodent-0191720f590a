@@ -1,0 +1,8 @@
+// Version: 1.0.0
+type Post =
+  {author : Text; body : Text; id : Nat; timestamp : Time; title : Text};
+type Time = Int;
+actor {
+  stable var nextId : Nat;
+  stable var posts : [Post]
+};
